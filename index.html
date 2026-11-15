@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sifsci — Creative software for everyday ideas</title>
+  <meta name="description" content="Sifsci is an independent software studio building Sifcut, a video editor for Android.">
+  <meta name="theme-color" content="#fcfafc">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sifsci">
+  <meta property="og:title" content="Sifsci — Creative software for everyday ideas">
+  <meta property="og:description" content="Sifsci is an independent software studio building Sifcut, a video editor for Android.">
+  <link rel="icon" href="./assets/favicon.png" type="image/png">
+  <link rel="preload" href="./assets/geist.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="./assets/site.css">
+  <script src="./assets/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="./" aria-label="Sifsci home">
+        <img src="./assets/sifsci-mark.png" width="36" height="36" alt="">
+        <span>Sifsci</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-label="Open navigation" aria-expanded="false" hidden>
+        <span></span><span></span>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a href="./#sifcut">Sifcut</a>
+        <a href="./about/">About</a>
+        <a href="./privacy-policy/">Privacy</a>
+        <a href="./terms/">Terms</a>
+        <a class="nav-contact" href="mailto:ronit@sifsci.com">Contact <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="shell hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Independent software studio</p>
+        <h1 id="hero-title">Tools for the<br class="hero-break"> way you <span>create.</span></h1>
+        <p class="hero-lede">Sifsci makes creative software. Meet Sifcut, an Android video editor for bringing your footage together.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#sifcut">Explore Sifcut <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="./about/">About Sifsci <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+
+      <figure class="hero-visual">
+        <div class="preview-stage">
+          <div class="editor" data-editor>
+            <div class="editor-titlebar">
+              <span class="editor-app"><span class="sifcut-mark" aria-hidden="true"></span>Sifcut</span>
+              <span class="editor-project">Alpine drive</span>
+              <span class="editor-platform">Android</span>
+            </div>
+            <div class="editor-screen">
+              <img class="editor-image" src="./assets/alpine-drive.webp" width="1120" height="630" alt="A road winding beside a mountain lake at dusk" fetchpriority="high">
+            </div>
+            <div class="editor-controls" data-controls hidden>
+              <button class="play-button" type="button" aria-label="Play demo" data-play>
+                <span class="play-icon" aria-hidden="true"></span>
+              </button>
+              <span class="editor-counter"><span data-time>00:00.0</span><span class="editor-total"> / 00:12.0</span></span>
+              <span class="editor-preview-label">Sample timeline</span>
+            </div>
+            <div class="timeline" data-timeline hidden>
+              <div class="timeline-ruler" aria-hidden="true"><span>0s</span><span>4s</span><span>8s</span><span>12s</span></div>
+              <div class="timeline-track">
+                <div class="timeline-clips" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+                <span class="timeline-playhead" aria-hidden="true"></span>
+                <label class="sr-only" for="demo-timeline">Scrub the sample timeline</label>
+                <input id="demo-timeline" type="range" min="0" max="12" value="0" step="0.1">
+              </div>
+            </div>
+          </div>
+        </div>
+        <figcaption>Interactive concept preview</figcaption>
+      </figure>
+    </section>
+
+    <section class="product-section" id="sifcut" aria-labelledby="sifcut-title">
+      <div class="shell product-inner">
+        <div class="product-intro">
+          <div class="product-status">
+            <span class="sifcut-mark product-mark" aria-hidden="true"></span>
+            <span class="status-label"><span></span> In development for Android</span>
+          </div>
+          <h2 id="sifcut-title">Meet Sifcut.</h2>
+          <p>Make a cut from clips on your phone. Sifcut brings media import, project editing, preview and export into one workspace.</p>
+        </div>
+        <div class="product-details">
+          <div class="workflow-step">
+            <div class="workflow-icon icon-import" aria-hidden="true">↓</div>
+            <div><h3>Bring in your footage</h3><p>Choose media through Android’s file picker and add it to a project.</p></div>
+          </div>
+          <div class="workflow-step">
+            <div class="workflow-icon icon-preview" aria-hidden="true"><span></span></div>
+            <div><h3>Review your edit</h3><p>Play back your project and check how your clips fit together.</p></div>
+          </div>
+          <div class="workflow-step">
+            <div class="workflow-icon icon-export" aria-hidden="true">↗</div>
+            <div><h3>Save your cut</h3><p>Export an MP4 to your Android device when your edit is ready.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="shell contact-section" aria-labelledby="contact-title">
+      <div class="contact-card">
+        <div>
+          <h2 id="contact-title">Questions about Sifcut?</h2>
+          <p>Tell us what you’re trying to edit or ask how the app handles your data.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button button-primary" href="mailto:ronit@sifsci.com">Email Sifsci <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="./privacy-policy/">Privacy Policy <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="./" aria-label="Sifsci home">
+          <img src="./assets/sifsci-mark.png" width="30" height="30" alt="">
+          <span>Sifsci</span>
+        </a>
+        <small>© 2026 Sifsci</small>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="./about/">About</a>
+        <a href="./privacy-policy/">Privacy Policy</a>
+        <a href="./terms/">Terms &amp; Conditions</a>
+        <a href="mailto:ronit@sifsci.com">Contact <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
